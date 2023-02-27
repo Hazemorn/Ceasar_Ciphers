@@ -11,25 +11,11 @@ fn main() {
     //let test_fir = String::from("Hello and bye");
     //let test_sec= "Bye".to_string();
     /////
-/* 
-    //first try
-    //let eng_let: [char; 26] = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x', 'y','z']; 
-    
-    //let mut eng_letters: HashMap<usize,char> = HashMap::new(); //let mut eng_letters =['a';26];
-
-    //let mut i=0;
-    //while i<eng_let.len() {//&& j<eng_letters.len(){
-    //    eng_letters.insert(i, eng_let[i]);
-    //    i+=1;
-    //}
-    //println!("{:?}", eng_letters);
-*/
     println!("Input the text:");
     match io::stdin().read_line(&mut input_text){
         Ok(_)=>{println!("The text accepted")},
         Err(_e)=>{eprintln!("No input text.Please try again")}
     }
-    
     println!("Input the key:");
     /*match io::stdin().read_line(&mut key){
         Ok(_)=>println!("The key accepted"),
@@ -42,13 +28,10 @@ fn main() {
 
     //TEST 
     //let char_vec_fir: Vec<char>= test_fir.chars().collect();
-   // let char_vec_sec:Vec<char> = test_sec.chars().collect();
     //////
     convert(key ,input_text);
-       
     }
 }
-
 
 fn convert ( key:u32 , input_text: String){
     let start = Instant::now();
@@ -68,6 +51,19 @@ fn convert ( key:u32 , input_text: String){
     println!("\n\nTime elapsed in Caesar Cipher converter is: {:?}", duration); 
 
 }
+/* 
+    //first try
+    //let eng_let: [char; 26] = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x', 'y','z']; 
+    
+    //let mut eng_letters: HashMap<usize,char> = HashMap::new(); //let mut eng_letters =['a';26];
+
+    //let mut i=0;
+    //while i<eng_let.len() {//&& j<eng_letters.len(){
+    //    eng_letters.insert(i, eng_let[i]);
+    //    i+=1;
+    //}
+    //println!("{:?}", eng_letters);
+*/
 /*A a		
 
 B b		
