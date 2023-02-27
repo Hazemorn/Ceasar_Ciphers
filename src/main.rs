@@ -1,8 +1,9 @@
 use std::io;
 use std::char;
 use std::time:: {Instant};
-fn main() {
 
+fn main() {
+    loop{
     let mut input_text = String::new();
     let mut key_str= String::new();
 
@@ -45,7 +46,7 @@ fn main() {
     //////
     convert(key ,input_text);
        
-
+    }
 }
 
 
@@ -65,8 +66,8 @@ fn convert ( key:u32 , input_text: String){
     }
     let duration = start.elapsed();
     println!("\n\nTime elapsed in Caesar Cipher converter is: {:?}", duration); 
-}
 
+}
 /*A a		
 
 B b		
